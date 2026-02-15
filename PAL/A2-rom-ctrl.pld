@@ -38,12 +38,13 @@ Device    g22V10;
 /* PIN24 VCC                 */
  
 PIN 5   =   RW;  /* read / write */
-PIN 6   =  CRE;  /* Card Rom Enable */
+PIN 6   =  CRE;  /* Card Rom Enable (jumper) */
 PIN 23  =  A12;
 PIN 10  =  A13;
 PIN 11  =  A14;
 PIN 13  =  A15;
 PIN 8   = PHY1;
+
 PIN 14  =    G;   /* 74LS244 Ouput Enable */
 PIN 15  =   OE;   /* ROM Output Enable */
 PIN 16  =   CE;   /* ROM Chip Enable */
@@ -54,5 +55,5 @@ S = !(ADDRSEL & RW & !PHY1 & !CRE);
 CE  = S;
 OE  = S;
 G   = S;
-
 INH = !S;
+
