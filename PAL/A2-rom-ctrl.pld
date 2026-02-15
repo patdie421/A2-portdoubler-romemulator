@@ -54,4 +54,5 @@ S = !(ADDRSEL & RW & !PHY1 & !CRE);
 CE  = S;
 OE  = S;
 G   = S;
+
 INH = !S;
