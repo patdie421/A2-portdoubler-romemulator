@@ -1,4 +1,4 @@
-THis card provide 2 functionality :  
+This card provide 2 functionality :  
 - duplicates the card slot into 2 horizontal slots
 - rom emulation card (https://mirrors.apple2.org.za/ftp.apple.asimov.net/documentation/hardware/schematics/rom_emulator_card_050-0009-01_schematic.pdf)
 
