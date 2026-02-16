@@ -1,16 +1,16 @@
 This card provide 2 functionality :  
-- duplicates the card slot into 2 horizontal slots
-- rom emulation card (https://mirrors.apple2.org.za/ftp.apple.asimov.net/documentation/hardware/schematics/rom_emulator_card_050-0009-01_schematic.pdf)
+- duplicates the card slot into 2 horizontal slots. I imagened this card to be able to use a A2DVI in Apple IIs that all slots are used.  
+- rom emulation card (https://mirrors.apple2.org.za/ftp.apple.asimov.net/documentation/hardware/schematics/rom_emulator_card_050-0009-01_schematic.pdf).  
 
 # Slot doubler  
 This card is designed to allow the installation of two cards in a single slot. Although it can be installed in any slot, it is most effectively used as a splitter in slot 7. Since the two connectors are wired in parallel, not all card combinations are possible.
-## kind of Apple II cards
+## kinds of Apple II cards
 We can identify 3 kinds of cards :
 - basic card : use soft switches, 16 addresses 0xC080+n\*0x10 to 0xC08F+n\*0x10, n=1 to 7, to interact whith the system. The card is activated by "Device Select" line.
-- card with firmware locate at Cn00-CnFF (n=1 to 7), the "I/O Select" activated this kind of card when the firmware page is read or write.
+- card with firmware locate at Cn00-CnFF (n=1 to 7), the "I/O Select" activated this kind of card when the firmware page is read or write. Most of this cards (if not all) use also soft switches at addresses C0N0x.  
 - card "watching" the address bus (did'nt use Device Select or or I/O Select).  
 
-Note that most firmwered cards combine the different selection methods.  
+  
 
 Other think that limit the combinaison is the use of DMA and Interrupt line.  
 
