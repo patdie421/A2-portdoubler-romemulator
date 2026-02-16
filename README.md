@@ -18,7 +18,8 @@ Before trying to install 2 cards in the doubled slots you have to know witch kin
  
 ## possible combinaisons
 
-## working (tested) combinaison
+## working (tested) combinaisons
+(to be done)
 
 (usefull information can be fund here : https://grokipedia.com/page/apple_ii_peripheral_cards)
 
