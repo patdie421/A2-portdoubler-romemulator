@@ -10,7 +10,7 @@ We can identify 3 kinds of cards :
 - card with firmware locate at Cn00-CnFF (n=0 to 7), the "I/O Select" activated this kind of card when the firmware page is read or write.
 - card "watching" the address bus (did'nt use Device Select or or I/O Select).  
 
-Note that some cards combine the different selection methods.  
+Note that most firmwered cards combine the different selection methods.  
 
 Other think that limit the combinaison is the use of DMA and Interrupt line.  
 
