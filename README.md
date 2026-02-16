@@ -4,9 +4,9 @@ THis card provide 2 functionality :
 
 # Slot doubler  
 This card is designed to allow the installation of two cards in a single slot. Although it can be installed in any slot, it is most effectively used as a splitter in slot 7. Since the two connectors are wired in parallel, not all card combinations are possible.
-## kind of card
-We can identify 3 kind of cards :
-- basic card who use soft switch (16 address C080+n) to interact whith the system, ioselect line is used
+## kind of Apple II cards
+We can identify 3 kinds of cards :
+- basic card : use soft switches (16 address 0xC080+n*0x10 to 0xC08F+n*0x10) to interact whith the system. The card is activated by "Device Select" line.
 - card with firmware locate at Cn00-CnFF (n=0 to 7), icprobe is used
 - card "watching" the address bus (did'nt use ioselect, ioprobe or devices select) 
 
