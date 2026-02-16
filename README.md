@@ -9,7 +9,7 @@ We can identify 3 kinds of cards :
 - basic card : use soft switches, 16 addresses 0xC080+n\*0x10 to 0xC08F+n\*0x10, n=0 to 7, to interact whith the system. The card is activated by "Device Select" line.
 - card with firmware locate at Cn00-CnFF (n=0 to 7), the "I/O Select" activated this kind of card when the firmware page is read or write.
 - card "watching" the address bus (did'nt use Device Select or or I/O Select).  
-
+Note that some cards combine the different selection methods.  
 ## 
 usefull information can be fund here : https://grokipedia.com/page/apple_ii_peripheral_cards
 
