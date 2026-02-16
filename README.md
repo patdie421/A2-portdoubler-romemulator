@@ -6,7 +6,7 @@ THis card provide 2 functionality :
 This card is designed to allow the installation of two cards in a single slot. Although it can be installed in any slot, it is most effectively used as a splitter in slot 7. Since the two connectors are wired in parallel, not all card combinations are possible.
 ## kind of Apple II cards
 We can identify 3 kinds of cards :
-- basic card : use soft switches (16 address 0xC080+n\*0x10 to 0xC08F+n\*0x10) to interact whith the system. The card is activated by "Device Select" line.
+- basic card : use soft switches (16 addresses 0xC080+n\*0x10 to 0xC08F+n\*0x10) to interact whith the system. The card is activated by "Device Select" line.
 - card with firmware locate at Cn00-CnFF (n=0 to 7), the "I/O Select" activated this kind of card when the firmware page is read or write.
 - card "watching" the address bus (did'nt use Device Select or or I/O Select) 
 
