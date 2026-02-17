@@ -51,7 +51,7 @@ PIN 14  =     G;   /* 74LS244 Ouput Enable */
 PIN 15  =    OE;   /* ROM Output Enable */
 PIN 16  =    CE;   /* ROM Chip Enable */
 PIN 17  =   INH;   /* INHibited motherboard ROM */
-PIN 18  = DMAIN;
+PIN 18  = DMAIN;   /* DMA acces in progress */
 /*
    0xFnnn or 0xEnnn or 0xDnnn are valide ROM adresses
    => A15 and A14 must be high
@@ -75,5 +75,6 @@ CE  = S;
 OE  = S;
 G   = S;
 INH = !S;
+
 
 
