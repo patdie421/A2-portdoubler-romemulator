@@ -1,5 +1,5 @@
 This card provide 2 functionalities :  
-- duplicates the card slot into 2 horizontal slots. I designed this card so that it could use an A2DVI interface on Apple II computers, all of whose slots are occupied.  
+- duplicates the slot it uses into two horizontal slots. I designed it to be able to use an A2DVI interface on Apple II computers where all the slots are occupied.  
 - ROM emulation card (https://mirrors.apple2.org.za/ftp.apple.asimov.net/documentation/hardware/schematics/rom_emulator_card_050-0009-01_schematic.pdf). This first version is designed to use Adrian Black Deadtest ROM (https://github.com/misterblack1/appleII_deadtest)
   - did'nt allow to control by softwitch  
   - DMA IN/OUT are not supported
