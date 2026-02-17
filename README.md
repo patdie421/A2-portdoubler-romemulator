@@ -3,8 +3,7 @@ This card provide 2 functionalities :
 - ROM emulation card (https://mirrors.apple2.org.za/ftp.apple.asimov.net/documentation/hardware/schematics/rom_emulator_card_050-0009-01_schematic.pdf). Because it's a request from a friend, and I have some place on my card doubler, this first version is designed to use only Adrian Black's Deadtest ROM (https://github.com/misterblack1/appleII_deadtest), so :
   - it did'nt allow to be controled by softwitch  
   - DMA IN/OUT are not supported  
-
-  A version currently under development will provide all the functionalities of a ROM card  
+  A version of the card currently under development will provide all the functionalities of a ROM card  
 # Slot doubler  
 This card is designed to allow the installation of two cards in a single slot. Although it can be installed in any slot, it is most effectively used as a splitter in slot 7. Since the two connectors are wired in parallel, not all card combinations are possible.
 ## kinds of Apple II cards
