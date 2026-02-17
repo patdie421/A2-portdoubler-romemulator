@@ -4,7 +4,7 @@ This card provide 2 functionalities :
   - it did'nt allow to be controled by softwitch  
   - DMA IN/OUT are not supported
 
-A version currently under development will provide all the functionalities of a ROM card  
+  A version currently under development will provide all the functionalities of a ROM card  
 # Slot doubler  
 This card is designed to allow the installation of two cards in a single slot. Although it can be installed in any slot, it is most effectively used as a splitter in slot 7. Since the two connectors are wired in parallel, not all card combinations are possible.
 ## kinds of Apple II cards
