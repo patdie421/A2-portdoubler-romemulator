@@ -9,7 +9,7 @@ This card is designed to allow the installation of two cards in a single slot. A
 We can identify 3 kinds of cards :
 - basic card : use soft switches, 16 addresses 0xC080+n\*0x10 to 0xC08F+n\*0x10, n=1 to 7, to interact whith the system. The card is activated by "Device Select" line.
 - card with firmware locate at Cn00-CnFF (n=1 to 7), the "I/O Select" activated this kind of card when the firmware page is read or write. Most of this cards (if not all) use also soft switches at addresses C0N0x.  
-- card "watching" the address bus (did'nt use Device Select or or I/O Select).  
+- card "monitoring" the address bus (does not use device selection or I/O selection).  
 
 Other factors limit this combination, including the use of DMA and interrupt lines (/NMI and /INT).  
 
