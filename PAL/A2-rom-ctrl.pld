@@ -36,7 +36,8 @@ Device    g22V10;
 /* # POWER:                  */
 /* PIN12 GND                 */
 /* PIN24 VCC                 */
- 
+
+/* INPUTS */
 PIN 5   =   RW;  /* read / write */
 PIN 6   =  CRE;  /* Card Rom Enable (jumper) */
 PIN 23  =  A12;
@@ -45,15 +46,33 @@ PIN 11  =  A14;
 PIN 13  =  A15;
 PIN 8   = PHY1;
 
+/* OUTPUTS */
 PIN 14  =    G;   /* 74LS244 Ouput Enable */
 PIN 15  =   OE;   /* ROM Output Enable */
 PIN 16  =   CE;   /* ROM Chip Enable */
 PIN 17  =  INH;   /* INHibited motherboard ROM */
 
-ADDRSEL = A15 & A14 & !(!A13 & !A12);
-S = !(ADDRSEL & RW & !PHY1 & !CRE);
+/*
+   0xFnnn or 0xEnnn or 0xDnnn are valide ROM adresses
+   => A15 and A14 must be high
+   => A13 or A12 must be high
+   read access
+   => RW must be high
+   active on PHY1 low
+   => PHY1 must be low
+   selection jumper must be set
+   => CRE must be low
+
+   CE/OE/G is active low
+   => S is low when selection
+   INH is connect to a BS170
+   => !S to disable motherboard ROM
+*/
+
+S = !(A15 & A14 & (A13 # A12) & RW & !PHY1 & !CRE);
 CE  = S;
 OE  = S;
 G   = S;
 INH = !S;
+
 
