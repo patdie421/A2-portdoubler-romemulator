@@ -56,7 +56,7 @@ PIN 18  = DMAIN;
    0xFnnn or 0xEnnn or 0xDnnn are valide ROM adresses
    => A15 and A14 must be high
    => A13 or A12 must be high
-   read access
+   read access only
    => RW must be high
    No DMA Access
    => DMAIN must be high
@@ -75,4 +75,5 @@ CE  = S;
 OE  = S;
 G   = S;
 INH = !S;
+
 
