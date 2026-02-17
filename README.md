@@ -13,11 +13,13 @@ We can identify 3 kinds of cards :
 - card with firmware locate at Cn00-CnFF (n=1 to 7), the "I/O Select" activated this kind of card when the firmware page is read or write. Most of this cards (if not all) use also soft switches at addresses C0N0x.  
 - card "monitoring" the address bus (does not use device selection or I/O selection).  
 
-Other factors limit this combination, including the use of DMA and interrupt lines (/NMI and /INT).  
-
-Before trying to install 2 cards in the doubled slots you have to know witch kind of cards you have.  
- 
 ## possible combinaisons
+
+Different factors limit possible combinations :
+- kind of card
+- DMA or Interrupts
+Other factors limit this combination, including the use of DMA and interrupt lines (/NMI and /INT).  
+Before trying to install 2 cards in the doubled slots you have to know witch kind of cards you have.  
 
 ## working (tested) combinaisons
 (to be done)
