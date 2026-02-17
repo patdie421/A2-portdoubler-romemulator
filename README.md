@@ -1,7 +1,7 @@
 This card provide 2 functionality :  
 - duplicates the card slot into 2 horizontal slots. I imagened this card to be able to use a A2DVI in Apple IIs that all slots are used.  
 - rom emulation card (https://mirrors.apple2.org.za/ftp.apple.asimov.net/documentation/hardware/schematics/rom_emulator_card_050-0009-01_schematic.pdf). This first version is designed to use Adrian Black Deadtest ROM (https://github.com/misterblack1/appleII_deadtest)
-  - This fist version did'nt allow to control by softwitch
+  - did'nt allow to control by softwitch
   - DMA IN/OUT are not supported
 # Slot doubler  
 This card is designed to allow the installation of two cards in a single slot. Although it can be installed in any slot, it is most effectively used as a splitter in slot 7. Since the two connectors are wired in parallel, not all card combinations are possible.
