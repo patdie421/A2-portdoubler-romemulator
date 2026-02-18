@@ -58,8 +58,6 @@ PIN 18  = DMAIN;   /* DMA acces in progress */
    => A13 or A12 must be high
    read access only
    => RW must be high
-   No DMA Access
-   => DMAIN must be high
    active on PHY1 low
    => PHY1 must be low
    selection jumper must be set
@@ -70,9 +68,10 @@ PIN 18  = DMAIN;   /* DMA acces in progress */
    => !S to disable motherboard ROM
 */
 
-S = !(A15 & A14 & (A13 # A12) & RW & DMAIN & !PHY1 & !CRE);
+S = !(A15 & A14 & (A13 # A12) & RW & !PHY1 & !CRE);
 CE  = S;
 OE  = S;
 G   = S;
 INH = !S;
+
 
