@@ -1,8 +1,8 @@
 This card provide 2 functionalities :  
-- duplicates the slot it uses into two horizontal slots. I designed it to be able to use an A2DVI interface on Apple II computers where all the slots are occupied.  
-- ROM emulation card (https://mirrors.apple2.org.za/ftp.apple.asimov.net/documentation/hardware/schematics/rom_emulator_card_050-0009-01_schematic.pdf). Because it's a request from a friend, and I have some place on my card doubler, this first version is designed to use only Adrian Black's Deadtest ROM (https://github.com/misterblack1/appleII_deadtest), so :
+- duplicates the slot it uses into two horizontal slots (usefull in slot 7). I designed it to be able to use an A2DVI interface on Apple II computers where all the slots are occupied.  
+- ROM emulation card (https://mirrors.apple2.org.za/ftp.apple.asimov.net/documentation/hardware/schematics/rom_emulator_card_050-0009-01_schematic.pdf). A friend ask me for a card capable of running Adrian Black's Deadtest ROM (https://github.com/misterblack1/appleII_deadtest). Since I had space on my card splitter, I simply added three chips, and that was it. This first version is designed to use only the Deadtest ROM. Current restriction :
   - it did'nt allow to be controled by softwitch  
-  - DMA IN/OUT are not supported (not needed when used in slot 7)
+  - DMA IN/OUT are not supported (not needed when used in slot 7)  
 
   A version of the card currently under development will provide all the functionalities of a ROM card  
 # Slot doubler  
