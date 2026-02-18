@@ -53,7 +53,7 @@ PIN 16  =    CE;   /* ROM Chip Enable */
 PIN 17  =   INH;   /* INHibited motherboard ROM */
 PIN 18  = DMAIN;   /* DMA acces in progress */
 /*
-   0xFnnn or 0xEnnn or 0xDnnn are valide ROM adresses
+   Only 0xFnnn or 0xEnnn or 0xDnnn are valide ROM adresses
    => A15 and A14 must be high
    => A13 or A12 must be high
    read access only
