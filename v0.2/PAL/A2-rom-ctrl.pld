@@ -1,7 +1,7 @@
 Name      roma2;
 Partno    0;
 Date      25/01/26;
-Revision  0;
+Revision  2;
 Designer  Patrice;
 Company   CDP;
 Assembly  None;
@@ -30,8 +30,8 @@ Device    g22V10;
 /* PIN23 A12                 */
 /* # OUT:                    */
 /* PIN14 /G (enable 74LS244) */
-/* PIN15 /OE (enable 2764)   */
-/* PIN16 /CE (enable 2764)   */
+/* PIN15 /RE (enable 2764)   */
+/* PIN16 /DMAOUT             */
 /* PIN17 /INH                */
 /* # POWER:                  */
 /* PIN12 GND                 */
@@ -47,18 +47,18 @@ PIN 13  =  A15;
 PIN 8   = PHY1;
 
 /* OUTPUTS */
-PIN 14  =     G;   /* 74LS244 Ouput Enable */
-PIN 15  =    OE;   /* ROM Output Enable */
-PIN 16  =    CE;   /* ROM Chip Enable */
-PIN 17  =   INH;   /* INHibited motherboard ROM */
-PIN 18  = DMAIN;   /* DMA acces in progress */
+PIN 14  =      G;   /* 74LS244 Ouput Enable */
+PIN 15  =     RE;   /* ROM Output Enable */
+PIN 16  = DMAOUT;   /* DMAOUT */
+PIN 17  =    INH;   /* INHibited motherboard ROM */
+PIN 18  =  DMAIN;   /* DMA acces in progress */
 /*
    Only 0xFnnn or 0xEnnn or 0xDnnn are valide ROM adresses
    => A15 and A14 must be high
    => A13 or A12 must be high
    read access only
    => RW must be high
-   No DMA Access
+   No DMA Access (used to prevent 2 or more ROM cards from operating simultaneously)
    => DMAIN must be high
    active on PHY1 low
    => PHY1 must be low
@@ -75,3 +75,4 @@ CE  = S;
 OE  = S;
 G   = S;
 INH = !S;
+DMAOUT = S;
