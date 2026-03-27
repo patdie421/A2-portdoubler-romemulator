@@ -27,7 +27,7 @@ Before trying to install 2 cards in the doubled slots you have to know witch kin
 (usefull information can be fund here : https://grokipedia.com/page/apple_ii_peripheral_cards)
 
 # Rom emulation card
-The rom is activated when a jumper is set on JP4. Current version can only by used for Apple II deadtest ROM.  
+The rom is activated when a jumper is set on JP4. Current version can only be used for Apple II deadtest ROM.  
 Work is in progress to emulate all functionalities of Apple Rom Emulator Card (050-0009-01)  (https://mirrors.apple2.org.za/Apple%20II%20Documentation%20Project/Interface%20Cards/ROM%20Cards/Apple%20ROM%20Emulator%20Card/Photos/Apple%20ROM%20Card%20with%20ROM%20-%20Front.jpg))
 
 2764 or 27128 Eprom (or pinout equivalent) can be used. Check Adrian's documentation for burning the ROM. Not that for 8K ROM (2764) you have to load into address $1800 or for 16K ROM (27128) to $3800.
