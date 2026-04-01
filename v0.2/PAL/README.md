@@ -1,1 +1,1 @@
-version under construction. Do not use for now.
+Version under construction. Don't use it for now.
