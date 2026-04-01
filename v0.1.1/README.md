@@ -1,2 +1,4 @@
-Tested, working.
-Installation in some IIe will be difficult for card in upper slot.
+Update connector positions  
+  
+ Not tested now
+ 
