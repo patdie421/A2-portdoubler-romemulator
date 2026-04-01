@@ -1,0 +1,77 @@
+Name      roma2;
+Partno    0;
+Date      25/01/26;
+Revision  0;
+Designer  Patrice;
+Company   CDP;
+Assembly  None;
+Location  None;
+Device    g22V10;
+
+/* PINOUT */
+/* #IN: */
+/* PIN01 CLK*/
+/* PIN02 /DEVSEL             */
+/* PIN03 /IOSEL              */
+/* PIN04 /IOSTROBE           */
+/* PIN05 R/W                 */
+/* PIN06 JP4 (rom enable)    */
+/* PIN07 PHI0                */
+/* PIN08 PHI1                */
+/* PIN09 /RESET              */
+/* PIN10 A13                 */
+/* PIN11 A14                 */
+/* PIN13 A15                 */
+/* PIN18 /DMAIN              */
+/* PIN19 A0                  */
+/* PIN20 A1                  */
+/* PIN21 A10                 */
+/* PIN22 A11                 */
+/* PIN23 A12                 */
+/* # OUT:                    */
+/* PIN14 /G (enable 74LS244) */
+/* PIN15 /OE (enable 2764)   */
+/* PIN16 /CE (enable 2764)   */
+/* PIN17 /INH                */
+/* # POWER:                  */
+/* PIN12 GND                 */
+/* PIN24 VCC                 */
+
+/* INPUTS */
+PIN 5   =   RW;  /* read / write */
+PIN 6   =  CRE;  /* Card Rom Enable (jumper) */
+PIN 23  =  A12;
+PIN 10  =  A13;
+PIN 11  =  A14;
+PIN 13  =  A15;
+PIN 8   = PHY1;
+
+/* OUTPUTS */
+PIN 14  =     G;   /* 74LS244 Ouput Enable */
+PIN 15  =    OE;   /* ROM Output Enable */
+PIN 16  =    CE;   /* ROM Chip Enable */
+PIN 17  =   INH;   /* INHibited motherboard ROM */
+PIN 18  = DMAIN;   /* DMA acces in progress */
+/*
+   0xFnnn or 0xEnnn or 0xDnnn are valide ROM adresses
+   => A15 and A14 must be high
+   => A13 or A12 must be high
+   read access only
+   => RW must be high
+   active on PHY1 low
+   => PHY1 must be low
+   selection jumper must be set
+   => CRE must be low
+   CE/OE/G is active low
+   => S is low when selection
+   INH is connect to a BS170
+   => !S to disable motherboard ROM
+*/
+
+S = !(A15 & A14 & (A13 # A12) & RW & !PHY1 & !CRE);
+CE  = S;
+OE  = S;
+G   = S;
+INH = !S;
+
+
